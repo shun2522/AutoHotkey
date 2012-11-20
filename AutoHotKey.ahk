@@ -13,7 +13,7 @@ LWIN::LCTRL
 ;CTRL + BSでDel
 ^BS::Send, {Delete}
 
-;CTRL + Spaceで半角/全角キー
+;CTRL + Spaceで半角/全角キーaあ
 ^Space::Send, !{sc029}
 
 ; Reverse Wheels
