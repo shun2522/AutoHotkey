@@ -1,4 +1,4 @@
-;PrintScreenでSnippingTool起動
+﻿;PrintScreenでSnippingTool起動
 PrintScreen::
 Process,Exist,SnippingTool.exe
 if ErrorLevel<>0
@@ -20,12 +20,12 @@ LWIN::LCTRL
 ^!Escape::Send, ^+{ESC}
 
 ;Reverse Wheels
-{
-	WheelUp::
-		Send {WheelDown}
-	Return
-
-	WheelDown::
-		Send {WheelUp}
-	Return
-}
+;{
+;	WheelUp::
+;		Send {WheelDown}
+;	Return
+;
+;	WheelDown::
+;		Send {WheelUp}
+;	Return
+;}
