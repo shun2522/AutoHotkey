@@ -1,4 +1,4 @@
-; PrintScreenでSnippingTool起動
+;PrintScreenでSnippingTool起動
 PrintScreen::
 Process,Exist,SnippingTool.exe
 if ErrorLevel<>0
@@ -7,20 +7,19 @@ else
 	Run,C:\Windows\Sysnative\SnippingTool.exe
 return
 
-
 ;LWINをLCTRLに置き換え
 LWIN::LCTRL
-
 
 ;CTRL + BSでDel
 ^BS::Send, {Delete}
 
-
 ;CTRL + Spaceで半角/全角キー
 ^Space::Send, !{sc029}
 
+;CTRL + Alt + Escでタスクマネージャ
+^!Escape::Send, ^+{ESC}
 
-; Reverse Wheels
+;Reverse Wheels
 {
 	WheelUp::
 		Send {WheelDown}
