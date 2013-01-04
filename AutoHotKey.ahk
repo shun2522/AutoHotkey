@@ -20,12 +20,12 @@ LWIN::LCTRL
 ^!Escape::Send, ^+{ESC}
 
 ;Reverse Wheels
-{
-	WheelUp::
-		Send {WheelDown}
-	Return
-
-	WheelDown::
-		Send {WheelUp}
-	Return
-}
+;{
+;	WheelUp::
+;		Send {WheelDown}
+;	Return
+;
+;	WheelDown::
+;		Send {WheelUp}
+;	Return
+;}
