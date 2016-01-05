@@ -1,10 +1,10 @@
-;PrintScreenでSnippingTool起動
-PrintScreen::
+;ctrl + shift + 4 で SnippingTool 起動
+^+4::
 Process,Exist,SnippingTool.exe
 if ErrorLevel<>0
  	WinActivate,ahk_pid %ErrorLevel%
 else
-	Run,C:\Windows\Sysnative\SnippingTool.exe
+	Run,C:\windows\system32\SnippingTool.exe
 return
 
 ;LWINをLCTRLに置き換え
@@ -20,4 +20,5 @@ LWIN::LCTRL
 ^!Escape::Send, ^+{ESC}
 
 ;CapsLockをLCTRLに置き換え
-vkF0sc03A::LCTRL
+;vkF0sc03A::LCTRL
+Capslock::LCTRL
